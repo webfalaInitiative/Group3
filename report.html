@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Namdhinggo:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body style="font-family: Inter;">
+      
+    <header>
+        <!-- navigation bar section -->
+        <div class="mt-[2rem] pl-[5.25rem] flex gap-[10rem] pb-[6.375rem] "  >
+                <img src="../Group3/images/logo1.svg" alt="">
+            <div class="gap-[22rem] flex list-none">
+                <ul class="flex py-[1.15rem] gap-[1.3125rem] justify-center items-center list-none " >
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" >Contact Us</a></li>
+                     <li><a href="" >FAQS</a></li>
+                </ul>
+                <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
+            </div>
+        </div>
+    </header>
+        
+        
+<section class="px-[5.25rem] ">
+    <div class=" pl-[2.25rem] bg-[#EEEAEA]">
+        <div class="flex flex-col justify-center items-center pb-[1.375rem] ">  
+            <h2 class="text-[3.125rem] font-bold" >ProtectiveEcho - Anonymous Reporting</h2>
+            <h3 class="font-normal text-[1.5rem] leading-[2.723125rem]" >Please report incidents of sexual and gender-based violence anonymously</h3>
+        </div>
+        <form id="reportForm" class="mb[50rem]">
+            <label for="incidentDate" class="block mb-2">Date of Incident:</label>
+            <input type="date" id="incidentDate" name="incidentDate" required class="border border-gray-300 p-4 py-2 mb-[4.1875rem] rounded-md ">
+        
+            <label for="incidentTime" class="block mb-2">Time of Incident:</label>
+            <input type="time" id="incidentTime" name="incidentTime" required class="border border-gray-300 px-4 py-2 mb-[4.1875rem] rounded-md ">
+
+            <label for="typeOfIncident" class="block mb-2">Type of Incident:</label>
+            <select id="selectOptions" name="selectOptions" class="mb-[4.1875rem] border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:border-blue-500">
+                <option value="option1">Sexual Harassment</option>
+                <option value="option2">Human Trafficking</option>
+                <option value="option3">Female Genital Mutilation/Cutting (FGM/C)</option>
+                <option value="option4">Reproductive Coercion</option>
+                <option value="option5">Stalking</option>
+                <option value="option5">Rape</option>
+                <option value="option6">Child Sexual Abuse</option>
+                <option value="option6">Domestic Violence</option>
+            </select>
+            
+            <label for="incidentLocation" class="block mb-2">Location of Incident:</label>
+            <input type="text" id="incidentLocation" name="incidentLocation" required class=" w-[45rem] border border-gray-300 px-4 py-2 mb-[4.1875rem] rounded-md ">
+
+            <label for="incidentDescription" class="block mb-2">Description of Incident:</label>
+            <textarea id="incidentDescription" name="incidentDescription" rows="4" required class=" w-[45rem] h-[20.1875rem] border border-gray-300 px-4 py-2 mb-4 rounded-md "></textarea>
+            <!-- <button class="text-white bg-[#6F3891] mx-[1.313rem] w-[15rem] px-4 py-2 rounded-md cursor-pointer ml-[30rem] mb-[1rem]">Submit Report</button> -->
+            <button type="button" class=" bg-[#6f3891] mx-[1.313rem] ml-[30rem] mb-[1rem] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]">Submit Report</button>
+        
+        </form>
+        
+
+        <div class="confirmation" id="confirmationMessage" style="display: none;">
+            <p>Thank you for your report. Your anonymity is respected and your report will be reviewed.</p>
+        </div>
+    </div>
+</section>
+<section class="px-[5.25rem] pt-[1.875rem] pb-[5rem]">
+    <div class=" h-[29.5rem] bg-[#D1BCE3] rounded-t-[1.875rem]">
+        <div class="mt-[4rem] px-[2.25rem] flex justify-between ">
+            <div class="pt-[6.75rem] pr-[3rem] ">
+                <h1 class=" font-bold text-[2.5rem] leading-[3rem] pb-[1.6875rem]">You Can Make A Difference.</h1>
+                <p class="pb-[1.25rem] text-[1.25rem]  font-norma pr-[0.5rem]">We Support Survivors, By Raising Awareness, and implementing preventive measures. </p>
+                <p class="pt-[1.6875] pb-[1.375rem]">Your Donation Will Make A difference</p>
+
+              <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Donate</a></button>
+            </div>
+              <img class="w-[40rem] h-[30rem] " src="../Group3/images/dn.svg" alt="">
+        </div>
+    </div>
+</section>
+<!-- complete footer -->
+<footer class="px-[5.625rem]  py-[5.6875rem]  text-white h-[29.5rem] bg-[#6f3891] ">
+<div class="flex justify-between ">
+    <img src="../Group3/images/logo2.svg" alt="">
+
+    <div class=" pl-[5rem] pr-[2.125rem] flex flex-col justify-around">
+        <a href="" class="font-bold ">Useful Links</a> 
+        <a href="">Privacy Policy</a>
+        <a href="term.html">Terms And Condition</a> 
+        <a href="">FAQs</a>
+    </div>
+    <div class=" flex flex-col justify-around">
+        <a href="" class="font-bold"> Quick Links</a>
+        <a href="">Resources</a>
+        <a href=""><p>Contact Us</p></a>
+    </div>
+    <div class="">
+       <div class="flex gap-[0.9375rem]"> <img src="../Group3/images/phoone.svg" alt=""> 08147448679,09067774136</div>
+       <div class="flex pt-[1.125rem] gap-[0.9375rem]"> <img src="../Group3/images/mail.svg" alt="">webfalainitiative@gmail.com</div>
+        <p class="pt-[1.125rem] font-bold">Work hours</p>
+        <p>8am - 4pm, Monday to Saturday</p>
+    </div>
+</div>
+<div class="flex gap-[0.75rem] pt-[0.9375rem] ">
+    <a href=""><img src="../Group3/images/linked.svg" alt="linkedIcon"></a>
+    <a href=""> <img src="../Group3/images/intagram.svg" alt="intagramIcom"></a>
+    <a href="https://whatsapp.com/channel/0029Va9I8fSJJhzTUTdFsp1q"><img src="../Group3/images/whatsaap.svg" alt="whatsaapIcon"></a>
+    <a href=""><img src="../Group3/images/facebook.svg" alt="facebookIcon"></a>
+</div>
+<div class="py-[4.5625rem]">
+    <div class=" w-[40rem] h-[4rem] bg-white border-none text-sm rounded-[2.5rem]  ml-[22.875rem]  relative ">
+        <input type="email" id="email" class="  w-[40rem] h-[4rem] bg-transparent rounded-[2.5rem]" required  placeholder="Email"  />
+         <button type="button" class="absolute top-2 right-[1.4375rem] bg-[#6f3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]">Subscribe</button>
+    </div>
+</div>
+</footer>
+    <script>
+        // Get the form and confirmation message elements
+        const form = document.getElementById('reportForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+
+        // Function to display the confirmation message
+        function displayConfirmationMessage() {
+            // Show the confirmation message
+            confirmationMessage.style.display = 'block';
+        }
+
+        // Add event listener to the form for form submission
+        form.addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+            
+            // Display the confirmation message
+            displayConfirmationMessage();
+
+            // You can include additional code here to send the message
+            // For example, you can use AJAX to send the message to a server
+        });
+    </script>
+
+</body>
+</html>
