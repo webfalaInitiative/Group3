@@ -543,3 +543,31 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+html,  body {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(-100%)
+}
+
+.close-icon{
+  display: none;
+}
+
+.hamburger{
+  position: fixed;
+  right: 1rem;
+}
+
+.show-menu{
+  transform: translateY(0);
+}
