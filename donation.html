@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<main class="pl-[5.6rem]">
+
+
+<h3 class="text-center mx-9 mt-2 font-bold text-[3.5rem] bg-[white] mb-[0.75rem] text-[#474747]">Donation Details</h3>
+<div class="pt-[6.75rem] pb-[4.875rem]">
+<hr>
+</div>
+<!-- <h3 class="w-[19.1rem] h-[2.75rem] font-[400] text-[2.25rem] leading-[2.7rem]">Donation Amount</h3>  -->
+<form>
+    
+       <div class="pb-[5rem]">
+        <h1  class=" font-[400] text-[2.25rem] leading-[2.7rem] pb-[3.375rem]"> Donation Amount<h1>
+        <input type="number" name="Donation" id="Donation" class=" relative  block w-[73.875rem] h-[7.1rem] rounded-[0.9rem] border-[0.06rem] mt-3.4rem">
+        <img src="images/naira.svg " alt="" class="absolute left-[75rem] top-[20rem] ">
+      
+       </div>
+       <hr class="">
+
+    <section class="flex flex-wrap w-[70rem] gap-[2rem]">
+        <div >
+            <label for="Credit Card Details" class=""></label>
+            <input type="text" name="first name" id="First Name" value="First Name" required placeholder="First Name" class=" w-[34.3rem] h-[6.25rem] rounded-[0.9rem] border-[0.06rem]">
+            <input type="text" name="last name" id="Last Name" value="Last Name" required placeholder="Last Name" class=" w-[34.3rem] h-[6.25rem] rounded-[0.9rem] border-[0.06rem]">
+        </div>
+       <div>
+        <input type="number" name="card number" id="card number" value="card number" required placeholder="1234 1234 1234" class=" w-[34.3rem] h-[6.25rem] rounded-[0.9rem] border-[0.06rem]">
+        <img src="images/card.svg" alt="">
+        <img src="images/master.svg" alt="">
+        <div class="flex"> 
+           <input type="number" name="mm/yy" id="mm/yy" value="mm/yy" required placeholder="MM/YY" class=" w-[34.3rem] h-[6.25rem] rounded-[0.9rem] border-[0.06rem]">
+        <input type="number" name="cvc" id="cvc" value="cvc" required placeholder="CVC" class="  w-[34.3rem] h-[6.25rem] rounded-[0.9rem] border-[0.06rem]">
+    </div>
+    <input type="text" name="country" id="country" value="NIGERIA" required  class=" w-[34.3rem] h-[6.25rem] rounded-[0.9rem] border-[0.06rem]">
+        <input type="tel" name="Phone no" id="Phone no" value="Phone no" required placeholder="+234" class=" w-[34.3rem] h-[6.25rem] rounded-[0.9rem] border-[0.06rem]">
+    </div>
+    </section>
+<input type="submit" value="Submit">
+</form>
+</main>
+</body>
+</html>
