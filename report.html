@@ -19,10 +19,10 @@
                 <img src="../Group3/images/logo1.svg" alt="">
             <div class="gap-[22rem] flex list-none">
                 <ul class="flex py-[1.15rem] gap-[1.3125rem] justify-center items-center list-none " >
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="contact.html" >Contact Us</a></li>
-                     <li><a href="" >FAQS</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./resources.html">Resources</a></li>
+                    <li><a href="./contact.html" >Contact Us</a></li>
+                     <li><a href="./FAQS.html" >FAQS</a></li>
                 </ul>
                 <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
             </div>
@@ -62,13 +62,13 @@
             <label for="incidentDescription" class="block mb-2">Description of Incident:</label>
             <textarea id="incidentDescription" name="incidentDescription" rows="4" required class=" w-[45rem] h-[20.1875rem] border border-gray-300 px-4 py-2 mb-4 rounded-md "></textarea>
             <!-- <button class="text-white bg-[#6F3891] mx-[1.313rem] w-[15rem] px-4 py-2 rounded-md cursor-pointer ml-[30rem] mb-[1rem]">Submit Report</button> -->
-            <button type="button" class=" bg-[#6f3891] mx-[1.313rem] ml-[30rem] mb-[1rem] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]">Submit Report</button>
+            <button type="button" class=" bg-[#6f3891] btn mx-[1.313rem] ml-[30rem] mb-[1rem] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]">Submit Report</button>
         
         </form>
         
 
-        <div class="confirmation" id="confirmationMessage" style="display: none;">
-            <p>Thank you for your report. Your anonymity is respected and your report will be reviewed.</p>
+        <div class="hidden" >
+            <p class="bg-white h-[10rem] w-[30rem] font-bold">Thank you for your report. Your anonymity is respected and your report will be reviewed.</p>
         </div>
     </div>
 </section>
@@ -80,7 +80,7 @@
                 <p class="pb-[1.25rem] text-[1.25rem]  font-norma pr-[0.5rem]">We Support Survivors, By Raising Awareness, and implementing preventive measures. </p>
                 <p class="pt-[1.6875] pb-[1.375rem]">Your Donation Will Make A difference</p>
 
-              <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Donate</a></button>
+              <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="./donation.html">Donate</a></button>
             </div>
               <img class="w-[40rem] h-[30rem] " src="../Group3/images/dn.svg" alt="">
         </div>
@@ -117,34 +117,30 @@
 </div>
 <div class="py-[4.5625rem]">
     <div class=" w-[40rem] h-[4rem] bg-white border-none text-sm rounded-[2.5rem]  ml-[22.875rem]  relative ">
-        <input type="email" id="email" class="  w-[40rem] h-[4rem] bg-transparent rounded-[2.5rem]" required  placeholder="Email"  />
+        <input type="email" id="email" class=" pl-[1rem] w-[40rem] h-[4rem] bg-transparent rounded-[2.5rem]" required  placeholder="Email"  />
          <button type="button" class="absolute top-2 right-[1.4375rem] bg-[#6f3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]">Subscribe</button>
     </div>
 </div>
 </footer>
-    <script>
-        // Get the form and confirmation message elements
-        const form = document.getElementById('reportForm');
-        const confirmationMessage = document.getElementById('confirmationMessage');
 
-        // Function to display the confirmation message
-        function displayConfirmationMessage() {
-            // Show the confirmation message
-            confirmationMessage.style.display = 'block';
+
+<script>
+    const text = document.querySelector('.hidden')
+    const btn = document.querySelector('.btn')
+
+    btn.addEventListener('click', function(){
+        if(text.classList == 'hidden'){
+            text.classList.remove('hidden')
+            text.classList.add('flex')
+        } else {
+            text.classList.remove('flex')
+            text.classList.add('hidden')
         }
+    })
 
-        // Add event listener to the form for form submission
-        form.addEventListener('submit', function(event) {
-            // Prevent the default form submission behavior
-            event.preventDefault();
-            
-            // Display the confirmation message
-            displayConfirmationMessage();
+</script>
 
-            // You can include additional code here to send the message
-            // For example, you can use AJAX to send the message to a server
-        });
-    </script>
+    
 
 </body>
 </html>
