@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,11 @@
 <body style="font-family: Inter;">
  <header>
             <!-- navigation bar section -->
-            <div class="mt-[2rem] pl-[5.25rem] flex gap-[10rem] "  >
+            <div class="lg:mt-[2rem] mt-[0.6rem] lg:pl-[5.25rem] pl-[1.5rem] flex gap-[10rem] "  >
                 
-                    <img src="./images/logo1.svg" alt="">
+                    <img src="./images/logo1.svg" alt="" class="lg:w-[13.6rem] w-[11.3rem]">
 
-                <div class="gap-[22rem] flex list-none ">
+                <div class="gap-[22rem] lg:flex hidden list-none ">
                     <ul class="flex py-[1.15rem] gap-[1.3125rem] justify-center items-center list-none h" >
                         <li><a href="./index.html" class="hover:font-bold ">Home</a></li>
                         <li class="active:before:font-bold "><a href="./resources.html " >Resources</a></li>
@@ -27,124 +27,134 @@
                          
                     </ul>
                     <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
-                   
-                </div>
             
-               
-                    
-                    
+                </div>
+
             </div>
+                        <!-- mobile view -->
+                        <ul class="menu lg:hidden block list-none ml-[14rem]" >
+                            <li><a href="./index.html" class="hover:font-bold ">Home</a></li>
+                            <li class="active:before:font-bold "><a href="./resources.html " >Resources</a></li>
+                            <li><a href="./contact.html" >Contact Us</a></li>
+                             <li><a href="./FAQS.html" >FAQS</a>
+                            <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
+                        </ul>
+                        <button class="lg:hidden handle-menu">
+                        <img src="./images/harmbuger.svg" alt="menu icon" class="menu-icon w-[2rem] h-[2rem]">
+                        <img src="./images/close.svg" alt="close icon" class="close-icon hidden w-[2rem] h-[2rem]">
+                        </button>
         </header>
-                        <section class="mt-[4rem] px-[5.25rem] flex gap-[1.625rem]">
+                        <section class="lg:mt-[4rem] mt-[1rem] lg:px-[5.25rem] px-[1.5rem] lg:flex gap-[1.625rem]">
                             
                             <div class="pt-[2rem]"> 
-                                <h1 class=" font-bold text-[3.125rem] leading-[3.781875rem] text-[#474747]   w-[31.8125] h-[11.4375rem]">Protective Echo: <br> Shielding Our World from Harm</h1>
-                                <p class="pt-[1.5rem] font-medium text-left w-[27.5625rem] h-[3.875rem] text-[1rem] leading-[1.5125rem] text-[#474747]" >We help to filter out the noise and keep the signal strong  
+                                <h1 class=" font-bold lg:text-[3.125rem] text-[1.5rem] lg:leading-[3.781875rem] leading-[1.8rem] text-[#474747]  lg:w-[31.8125rem] w-[20.4rem] lg:h-[11.4375rem]">Protective Echo: <br> Shielding Our World from Harm</h1>
+                                <p class="lg:pt-[1.5rem] pt-[0.9rem] font-medium text-left lg:w-[27.5625rem] w-[20.rem] h-[3.875rem] lg:text-[1rem] text-[0.7rem] lg:leading-[1.5125rem] leading-[0.8rem] text-[#474747]" >We help to filter out the noise and keep the signal strong  
                                    when the world is full of  distractions we are refuge for your mind
                                 </p>
-                    <div class="mt-[3.0625rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
+                    <div class="lg:mt-[3.0625rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  lg:w-[8.8125rem] w-[5.6rem] lg:h-[2.9375rem] h-[1.9rem] lg:text-[1rem] text-[11px]"> <a href="report.html">Report</a></button></div>
 
 
                             </div>
-                             <div class=""> <img class="w-full  h-full" src="./images/img.svg" alt=""></div>
+                             <div class="lg:mt-0 mt-[2.4rem]"> <img class="w-full  h-full lg:rounded-0 rounded-[1.9rem]" src="./images/img.svg" alt=""></div>
                         
                         </section>
                         <!-- about us section -->
                         
-                                     <div class="lg:mt-[4.0625rem] mt-[2.034em] px-[5.25rem]">
-                                            <div class="flex flex-col justify-center items-center pb-[1.375rem] font-bold">  
-                                                <h2 class="text-[2.99rem]  font-medium" >ABOUT US</h2>
-                                                <h3 class="test-[9.25rem]  leading-[2.723125rem] font-extrabold text-[#474747]" >WHY PROTECTIVE ECHO?</h3>
+                                     <div class="lg:mt-[4.0625rem] mt-[2.034em] lg:px-[5.25rem] px-[1.5rem]">
+                                            <div class="flex flex-col justify-center items-center lg:pb-[1.375rem] pb-[7px] font-bold">  
+                                                <h2 class="lg:text-[2.99rem] text-[1.5rem] font-medium" >ABOUT US</h2>
+                                                <h3 class="lg:text-[2rem] text-[1.1rem] lg:leading-[2.723125rem] font-extrabold text-[#474747]" >WHY PROTECTIVE ECHO?</h3>
                                             </div>
-                                                <p class="text-[1.24rem]  pb-[1.875rem] font-[25rem]">Community Support: Protective Echo is more than a reporting platform, 
+                                                <p class="lg:text-[1.24rem] text-[0.7rem] lg:pb-[1.875rem] font-[25rem]">Community Support: Protective Echo is more than a reporting platform, 
                                                     it is a community committed to fostering empathy, <br>understanding and solidarity.</p>
-                                                    <p class="text-[1.25rem]  pb-[1.875rem] font-normal">Advocacy for Change: By amplifying voices and stories, 
-                                                        we aim to contribute to a cultural shift, braking down barriers and <br>fostering a society
+                                                    <p class="lg:text-[1.25rem] text-[0.7rem] lg:pb-[1.875rem] font-normal">Advocacy for Change: By amplifying voices and stories, 
+                                                        we aim to contribute to a cultural shift, braking down barriers and  fostering a society
                                                          free from sexual and gender- based violence.</p>
-                                                         <p class="text-[1.25rem]  pb-[1.875rem] fomt-[25rem] text-[#000000]">Anonymous Empowerment: We priortize your safety and 
+                                                         <p class="lg:text-[1.25rem] text-[0.7rem] lg:pb-[1.875rem] fomt-[25rem] text-[#000000]">Anonymous Empowerment: We priortize your safety and 
                                                             confidentiality, allowing you to share your experiences without fear of   judgement or retribution.</p>
                                     </div>
 
                                     <!-- vision sec -->
-                                    <div class="flex mt-[2rem] px-[5.25rem] gap-[1.25rem]">
+                                    <div class="lg:flex lg:mt-[2rem] mt-[1.4rem] lg:px-[5.25rem] px-[1.5rem] gap-[1.25rem]">
 
-                                        <div class="w-[39.3125rem] h-[19.875rem] bg-[#EEEAEA] rounded-[1.25rem] pt-[2.09375rem] py-[4.09375rem]">
+                                        <div class="lg:w-[39.3125rem] w-[20.4rem] lg:h-[19.875rem] h-[9.9rem] bg-[#EEEAEA] rounded-[1.25rem] lg:pt-[2.09375rem] pt-[1.03rem] py-[4.09375rem]">
                                             <div class=" ">
-                                               <h2 class="pb-[1.25rem] text-[2.5rem] font-[700]  text-center "> OUR MISSION</h2> 
-                                                <p class="text-[0.99rem] px-[3.5rem] text-center ">At PROTECTIVE ECHO, we believe in the power of collective action to addrees and eradicate sexual and gender- based violence. Our platform is dedicated to providing a safe and anonymous space for survivors and witnesses to share their stories, report incidents and find support.</p>
+                                               <h2 class="lg:pb-[1.25rem] lg:text-[2.5rem] text-[1.5rem] font-[700]  text-center "> OUR MISSION</h2> 
+                                                <p class="lg:text-[0.99rem] text-[0.7rem] lg:px-[3.5rem] px-[1.9rem] text-center ">At PROTECTIVE ECHO, we believe in the power of collective action to addrees and eradicate sexual and gender- based violence. Our platform is dedicated to providing a safe and anonymous space for survivors and witnesses to share their stories, report incidents and find support.</p>
                                             </div>
                                         </div>
                                         <!-- mission -->
-                                        <div class="w-[39.3125rem] h-[19.875rem] bg-[#EEEAEA] rounded-[1.25rem] pt-[2.09375rem] py-[4.09375rem]">
+                                        <div class="lg:w-[39.3125rem] w-[20.4rem] lg:h-[19.875rem] h-[9.9rem] bg-[#EEEAEA] rounded-[1.25rem] lg:pt-[2.09375rem] pt-[1.03rem] lg:py-[4.09375rem] lg:mt-0 mt-[0.9rem]">
                                             <!-- <div class="flex flex-col justify-center items-center "> -->
-                                               <h2 class=" pb-[1.25rem] font-[700] text-[2.5rem] text-center"> OUR VISSION</h2> 
-                                                <p class="text-[0.99rem] px-[4.5rem] text-center ">At PROTECTIVE ECHO, WE envision a world free from sexual and gender- based violence, where every individual feels safe, heard and empowered. Our vision extends beyond breaking the silence; in encompasses fostering lasting change in societal attitudes..</p>
+                                               <h2 class=" lg:pb-[1.25rem] font-[700] lg:text-[2.5rem] text-[1.5rem] text-center"> OUR VISION</h2> 
+                                                <p class="lg:text-[0.99rem] text-[0.7rem] lg:px-[3.5rem] px-[1.9rem] text-center ">At PROTECTIVE ECHO, WE envision a world free from sexual and gender- based violence, where every individual feels safe, heard and empowered. Our vision extends beyond breaking the silence; in encompasses fostering lasting change in societal attitudes..</p>
                                             <!-- </div> -->
                                             </div>
 
                                     </div>
                                     <!-- Together section -->
-                                        <section  class="flex mt-[2rem] px-[5.25rem] pt-[1.875rem]">
+                                        <section  class="lg:flex mt-[2rem] lg:px-[5.25rem] px-[1.5rem] lg:pt-[1.875rem]">
                                             <div>
-                                                <h1 class=" font-bold text-[3.125rem] leading-[3.781875rem] pt-[8rem] ">Together we stand  against silence
+                                                <h1 class=" font-bold lg:text-[3.125rem] text-[1.1rem] lg:leading-[3.781875rem] leading-[29.8px] lg:pt-[8rem] ">Together we stand  against silence
                                                     </h1>
-                                                <p class="pt-[1rem] font-normal text-[1.25rem] text-left pr-[3rem] text-[#474747
+                                                <p class="pt-[1rem] font-normal lg:text-[1.25rem] text-[0.7rem] text-left lg:pr-[3rem] text-[#474747
                                                 ]">We are determined to help you speak out ,take action and support you in times of silence or oppression. 
                                                 </p>
                                             </div>
-                                              <img class="w-[40rem] h-full" src="./images/tg.svg" alt="">
+                                              <img class="lg:w-[40rem] w-[20.4rem] h-full lg:rounded-none rounded-[1.3rem] lg:mt-0 mt-[0.9rem]" src="./images/tg.svg" alt="">
                                         </section>
                                          
                             
                                 <!-- footer section -->
                                 
-                                    <section class="px-[5.25rem] pt-[1.875rem] pb-[5rem]">
-                                            <div class=" h-[29.5rem] bg-[#D1BCE3] rounded-t-[1.875rem]">
-                                                <div class="mt-[4rem] px-[2.25rem] flex justify-between ">
-                                                    <div class="pt-[6.75rem] pr-[3rem] ">
-                                                        <h1 class=" font-bold text-[2.5rem] leading-[3rem] pb-[1.6875rem]">You Can Make A Difference.</h1>
-                                                        <p class="pb-[1.25rem] text-[1.25rem]  font-norma pr-[0.5rem]">We Support Survivors, By Raising Awareness, and implementing preventive measures. </p>
-                                                        <p class="pt-[1.6875] pb-[1.375rem]">Your Donation Will Make A difference</p>
+                                    <section class="lg:px-[5.25rem] px-[1.5rem] lg:pt-[1.875rem] pb-[5rem]">
+                                            <div class=" lg:h-[29.5rem] h-[17rem] bg-[#D1BCE3] rounded-t-[1.875rem]">
+                                                <div class="lg:mt-[4rem] mt-[2rem] lg:px-[2.25rem] px-[1.5rem] lg:flex justify-between ">
+                                                    <div class="lg:pt-[6.75rem] pt-[1.9rem] lg:pr-[3rem] ">
+                                                        <h1 class=" font-bold lg:text-[2.5rem] text-[19px] lg:leading-[3rem] leading-[22.9px] lg:pb-[1.6875rem]">You Can Make A Difference.</h1>
+                                                        <p class="lg:pb-[1.25rem] lg:text-[1.25rem] text-[11px]  font-normal pr-[0.5rem]">We Support Survivors, By Raising Awareness, and implementing preventive measures. </p>
+                                                        <p class="lg:pt-[1.6875] 
+                                                        gpb-[1.375rem] lg:text-[1.3rem] text-[11px]">Your Donation Will Make A difference</p>
                 
-                                                      <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="./donation.html">Donate</a></button>
+                                                      <button class="bg-[#6F3891] text-white rounded-[2.625rem]  lg:w-[8.8125rem] w-[90px] lg:h-[2.9375rem] h-[30px] lg:text-[1rem] text-[0.7rem]"> <a href="./donation.html">Donate</a></button>
                                                     </div>
-                                                      <img class="w-[40rem] h-[30rem] " src="./images/dn.svg" alt="">
+                                                      <img class="lg:w-[40rem] w-[25rem] lg:h-[30rem] h-[104px]" src="./images/dn.svg" alt="">
                                                 </div>
                                             </div>
                                     </section>
                                       <!-- complete footer -->
-                                    <footer class="px-[5.625rem]  py-[5.6875rem]  text-white h-[29.5rem] bg-[#6f3891] ">
-                                        <div class="flex justify-between ">
-                                            <img src="./images/logo2.svg" alt="">
+                                    <footer class="lg:px-[5.625rem] px-[1.5rem] lg:py-[5.6875rem] py-[1.5rem]  text-white h-[29.5rem] bg-[#6f3891] ">
+                                        <div class="lg:flex justify-between ">
+                                            <img src="./images/logo2.svg" alt="" class="lg:w-[12.6rem] w-[7.9rem]">
 
-                                            <div class=" pl-[5rem] pr-[2.125rem] flex flex-col justify-around">
+                                            <div class=" lg:pl-[5rem] pl-[13rem] lg:pr-[2.125rem] flex flex-col justify-around lg:mt-0 -mt-12">
                                                 <a href="" class="font-bold ">Useful Links</a> 
                                                 <a href="">Privacy Policy</a>
                                                 <a href="term.html">Terms And Condition</a> 
                                                 <a href="./FAQS.html">FAQs</a>
                                             </div>
-                                            <div class=" flex flex-col justify-around">
+                                            <div class=" flex flex-col justify-around lg:ml-0 ml-[13rem]">
                                                 <a href="" class="font-bold"> Quick Links</a>
                                                 <a href="./resources.html">Resources</a>
                                                 <a href="./contact.html"><p>Contact Us</p></a>
                                             </div>
-                                            <div class="">
-                                               <div class="flex gap-[0.9375rem]"> <img src="./images/phoone.svg" alt=""> 08147448679,09067774136</div>
-                                               <div class="flex pt-[1.125rem] gap-[0.9375rem]"> <img src="./images/mail.svg" alt="">webfalainitiative@gmail.com</div>
-                                                <p class="pt-[1.125rem] font-bold">Work hours</p>
-                                                <p>8am - 4pm, Monday to Saturday</p>
+                                            <div class="lg:mt-0 -mt-28">
+                                               <div class="flex lg:gap-[0.9375rem] gap-[0.5rem] lg:w-fit w-[185px] lg:h-fit h-[20px]"> <img src="./images/phoone.svg" alt="" class="lg:text-[1rem] text-[11px] "> 08147448679,09067774136</div>
+                                               <div class="flex pt-[1.125rem] lg:gap-[0.9375rem] gap-[0.5rem] lg:w-fit w-[206px] lg:h-fit h-20px"> <img src="./images/mail.svg" alt="" >webfalainitiative@gmail.com</div>
+                                                <p class="lg:pt-[1.125rem] pt-[0.5rem] font-bold lg:text-[1rem] text-[0.9rem]">Work hours</p>
+                                                <p class="lg:text-[1rem] text-[0.7rem]">8am - 4pm, Monday to Saturday</p>
                                             </div>
                                         </div>
-                                        <div class="flex gap-[0.75rem] pt-[0.9375rem] ">
+                                        <div class="flex gap-[0.75rem] pt-[0.9375rem] lg:ml-0 ml-[10rem]">
                                             <a href=""><img src="./images/linked.svg" alt="linkedIcon"></a>
                                             <a href="https://www.instagram.com/webfalainitiative?igsh=MzRlODBiNWFlZA=="> <img src="./images/intagram.svg" alt="intagramIcom"></a>
                                             <a href="https://whatsapp.com/channel/0029Va9I8fSJJhzTUTdFsp1q"><img src="./images/whatsaap.svg" alt="whatsaapIcon"></a>
                                             <a href="https://www.facebook.com/webfalainitiative?mibextid=LQQJ4d"><img src="./images/facebook.svg" alt="facebookIcon"></a>
                                         </div>
                                         <div class="py-[4.5625rem]">
-                                            <div class=" w-[40rem] h-[4rem] bg-white border-none text-sm rounded-[2.5rem]  ml-[22.875rem]  relative ">
-                                                <input type="email" id="email" class="  w-[40rem] h-[4rem] bg-transparent rounded-[2.5rem] pl-[1rem]" required  placeholder="Email Addrees"  />
-                                                 <button type="button" class="absolute top-2 right-[1.4375rem] bg-[#6f3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]">Subscribe</button>
+                                            <div class=" lg:w-[40rem] w-[311px] lg:h-[4rem] h-[29px] bg-white border-none text-sm rounded-[2.5rem]  lg:ml-[22.875rem]  relative ">
+                                                <input type="email" id="email" class="  lg:w-[40rem] w-[311px] lg:h-[4rem] h-[29px] bg-transparent rounded-[2.5rem] pl-[1rem]" required  placeholder="Email Addrees"  />
+                                                 <button type="button" class="absolute lg:top-2 top-[0.2rem] lg:right-[1.4375rem] right-[0.6rem] bg-[#6f3891] text-white rounded-[2.625rem]  lg:w-[8.8125rem] w-[95px] lg:h-[2.9375rem] h-[25px]">Subscribe</button>
                                             </div>
                                         </div>
                                     </footer>

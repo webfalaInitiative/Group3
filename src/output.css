@@ -556,16 +556,21 @@ html,  body {
   bottom: 0;
   right: 0;
   left: 0;
-  transform: translateY(-100%)
+  transform: translateY(-100%);
+  z-index: 100;
+  transition: transform 0.3s;
+  margin-top: 1rem;
 }
 
 .close-icon{
   display: none;
 }
 
-.hamburger{
+.handle-menu{
   position: fixed;
+  top: 0.9rem;
   right: 1rem;
+  /* right: 1rem; */
 }
 
 .show-menu{
