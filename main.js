@@ -14,3 +14,8 @@ function toggleMenu() {
         closeIcon.style.display = 'block';
     }
 } ham.addEventListener('click', toggleMenu)
+
+
+
+
+
