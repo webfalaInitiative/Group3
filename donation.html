@@ -17,33 +17,36 @@
       
     <header>
         <!-- navigation bar section -->
-        <div class="mt-[2rem] lg:pl-[5.25rem] pl-[1.5rem] flex gap-[10rem] "  >
+        <div class="lg:mt-[2rem] mt-[0.6rem] lg:mx-[5.25rem] pl-[1.5rem] flex flex-wrap justify-between  "  >
             
-                <img src="./images/logo1.svg" alt="">
+                <img src="./images/logo1.svg" alt="" class="lg:w-[13.6rem] w-[11.3rem]">
 
-            <div class="gap-[22rem] lg:flex hidden list-none">
-                <ul class="flex py-[1.15rem] gap-[1.3125rem] justify-center items-center list-none " >
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./resources.html">Resources</a></li>
+            <div class=" justify-between items-center lg:flex hidden list-none ">
+                <ul class="flex py-[1.15rem] gap-[1.3125rem]   list-none h" >
+                    <li><a href="./index.html" class="hover:font-bold ">Home</a></li>
+                    <li class="active:before:font-bold "><a href="./resources.html " >Resources</a></li>
                     <li><a href="./contact.html" >Contact Us</a></li>
-                     <li><a href="./FAQS.html" >FAQS</a></li>
+                     <li><a href="./FAQS.html" >FAQS</a>
+                     
                 </ul>
-                <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
             </div>
-        <!-- mobile -->
-                <ul class=" py-[1.15rem] gap-[1.3125rem] list-none menu lg:hidden block" >
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="contact.html" >Contact Us</a></li>
-                     <li><a href="" >FAQS</a></li>
-                    <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="./donation.html">Report</a></button>
-                </ul>
-                <button class="hamburger lg:hidden block">
-                    <img src="./images/harmbuger.svg" alt="" class="menu-icon w-[2rem] h-[2rem]">
-                    <img src="./images/close.svg" alt="" class="close-icon w-[2rem] h-[2rem]">
-                </button>
-                
+                <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
+        
+           
+
         </div>
+                    <!-- mobile view -->
+                    <ul class="menu lg:hidden block list-none ml-[14rem]" >
+                        <li><a href="./index.html" class="hover:font-bold ">Home</a></li>
+                        <li class="active:before:font-bold "><a href="./resources.html " >Resources</a></li>
+                        <li><a href="./contact.html" >Contact Us</a></li>
+                         <li><a href="./FAQS.html" >FAQS</a>
+                        <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
+                    </ul>
+                    <button class="lg:hidden handle-menu">
+                    <img src="./images/harmbuger.svg" alt="menu icon" class="menu-icon w-[2rem] h-[2rem]">
+                    <img src="./images/close.svg" alt="close icon" class="close-icon hidden w-[2rem] h-[2rem]">
+                    </button>
     </header>
     
 <main class="pl-[5.6rem]">
