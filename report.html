@@ -29,7 +29,7 @@
                      
                 </ul>
             </div>
-                <div class="pt-[1rem]"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
+                <div class="pt-[1rem] lg:block hidden"> <button class="bg-[#6F3891] text-white rounded-[2.625rem]  w-[8.8125rem] h-[2.9375rem]"> <a href="report.html">Report</a></button></div>
         
            
 
@@ -49,13 +49,15 @@
     </header>
         
         
-<section class="lg:px-[5.25rem] lg:pt-0 pt-[2rem] ">
-    <div class=" lg:pl-[2.25rem] ">
+<section class="lg:px-[5.25rem] lg:pt-0 pt-[2rem]  ">
+    <div class=" lg:pl-[2.25rem] 
+     ">
         <div class="flex flex-col lg:justify-center items-center lg:pb-[1.375rem] ">  
             <h2 class="lg:text-[3.125rem] text-[18px] font-bold "  >ProtectiveEcho - Anonymous Reporting</h2>
             <h3 class="font-normal lg:text-[1.5rem] text-[10.5px] text-center lg:leading-[2.723125rem]" >Please report incidents of sexual and gender-based violence anonymously</h3>
         </div>
-        <form id="reportForm" class="mb[50rem] lg:pl-[0] pl-[31px] ">
+        <form id="reportForm" class="mb[50rem] lg:pl-[0] pl-[31px] bg-[#D1BCE3] ">
+            <div class="lg:pl-[2rem]">
             <label for="incidentDate" class="block mb-2">Date of Incident:</label>
             <input type="date" id="incidentDate" name="incidentDate" required class="border lg:w-[158px] lg:h-[44px] w-[10rem] h-[3rem] border-[#474747] p-4 py-2 lg:mb-[4.1875rem] mb-[15px] bg-transparent rounded-[15px]">
         
@@ -81,9 +83,9 @@
             <label for="incidentDescription" class="block mb-2">Description of Incident:</label>
             <textarea id="incidentDescription" name="incidentDescription" rows="4" required class=" lg:w-[50.375rem] w-[280px] lg:h-[323px] h-[151px] border border-[#474747] bg-transparent px-4 py-2 mb-4 rounded-[15px] "></textarea>
             <!-- <button class="text-white bg-[#6F3891] mx-[1.313rem] w-[15rem] px-4 py-2 rounded-md cursor-pointer ml-[30rem] mb-[1rem]">Submit Report</button> -->
-            <button type="button" class=" bg-[#6f3891] btn lg:mx-[1.313rem] justify-center lg:ml-[30rem] ml-[5rem] lg:mb-[1rem] text-white rounded-[2.625rem] mb-[1rem] w-[8.8125rem] h-[2.9375rem]">Submit Report</button>
+            <button type="button" class=" bg-[#6f3891] block btn lg:mx-[1.313rem] justify-center items-center lg:ml-[30rem] ml-[5rem] lg:mb-[1rem] text-white rounded-[2.625rem] mb-[1rem] w-[8.8125rem] h-[2.9375rem]">Submit Report</button>
         </form>
-        
+    </div>
 
         <div class="hidden" >
             <p class="font-bold">Thank you for your report. Your anonymity is respected and your report will be reviewed.</p>
